@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Love Calculator</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="heading">
+        <h1>Love ♥ Calculator</h1>
+        <h4>Get your love score in a moment</h4>
+      </div>
+      <div class="input-section">
+        <div>
+          <!-- Your name Inputfield -->
+          <label for="your-name">Your Name</label><br />
+          <input type="text" id="your-name" />
+        </div>
+        <div class="love-between"><h2>♥</h2></div>
+        <div>
+          <!-- Lover name Inputfield -->
+          <label for="their-name">Lover name</label><br />
+          <input type="text" id="their-name" />
+        </div>
+      </div>
+      <button type="submit">CALCULATE</button>
+
+      <div class="result">
+        <h2>Result</h2>
+        <div class="divider"></div>
+        <p id="yourlovescoreis"></p>
+        <h1 id="score"></h1>
+        <p id="loveinfo"></p>
+        <p
+          id="reload"
+          style="
+            cursor: pointer;
+            display: none;
+            margin-top: 30px;
+            font-weight: 700;
+          "
+          onClick="window.location.reload();"
+        >
+          ↺ Re Calculate
+        </p>
+      </div>
+    </div>
+    <script type="text/javascript"></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
